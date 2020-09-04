@@ -34,6 +34,7 @@ window.onload = function() {
             last = [e.touches[0].clientX - 20, e.touches[0].clientY - 70]
         }
         canvas.ontouchmove = (e) => {
+            e.preventDefault();
             draw(last[0], last[1], e.touches[0].clientX - 20, e.touches[0].clientY - 70);
             last = [e.touches[0].clientX - 20, e.touches[0].clientY - 70]
         }
