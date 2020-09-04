@@ -4,6 +4,163 @@
     box-sizing: border-box;
 }
 
+body {
+    /* overflow: hidden; */
+}
+
 #canvas {
     display: block;
+}
+
+.boardWrapper {
+    overflow: hidden;
+    width: 95%;
+    height: 85vh;
+    margin: auto auto;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.7);
+}
+
+#topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: flex-end;
+}
+
+#logo {
+    width: 400px;
+    height: 60px;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 402px;
+}
+
+#nav {
+    background: rgb(184, 184, 184);
+    height: 50px;
+    width: 200px;
+    padding: 2px 12px 0 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-right: 30px;
+}
+
+#nav span i {
+    font-size: 40px;
+}
+
+#nav span {
+    font-size: 20px;
+    display: block;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#nav .navActive {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
+}
+
+.penColorChose {
+    background: rgb(184, 184, 184);
+    position: absolute;
+    top: 59px;
+    width: 40px;
+    border-radius: 0 0 20px 20px;
+    height: 0px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.penColorChose div {
+    margin: 10px 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colorRed {
+    background: rgb(143, 6, 6);
+}
+
+.colorBlue {
+    background: rgb(14, 6, 121);
+}
+
+.colorBlack {
+    background: rgb(0, 0, 0);
+}
+
+.penSizeChose {
+    background: rgb(184, 184, 184);
+    position: absolute;
+    margin-left: 45px;
+    top: 59px;
+    width: 40px;
+    border-radius: 0 0 20px 20px;
+    height: 0px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sSize {
+    background: #000;
+    margin: 10px 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mSize {
+    background: #000;
+    margin: 10px 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lSize {
+    background: #000;
+    margin: 10px 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+@media(max-width:500px) {
+    #logo {
+        width: 370px;
+        height: 60px;
+        overflow: hidden;
+    }
+    #logo img {
+        width: 372px;
+    }
+    #nav {
+        background: rgb(184, 184, 184);
+        height: 50px;
+        width: 200px;
+        padding: 2px 12px 0 12px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        float: left;
+        position: absolute;
+        top: 75px;
+    }
 }

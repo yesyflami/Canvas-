@@ -6,11 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas画板</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
     <script src="canvas.js"></script>
+    <script src="move.js"></script>
 </head>
 
 <body>
-    <canvas id="canvas"></canvas>
+    <div id="topNav">
+        <div id="logo"><img src="https://i.loli.net/2020/09/04/bUZFEVw4DMrkYfv.png" alt="画板logo"></div>
+        <div id="nav">
+            <span id="penColor"><i class="iconfont" style="color:#07126d">&#xe61a;</i></span>
+            <div class="penColorChose" id="penColorChose">
+                <div class="colorRed"></div>
+                <div class="colorBlue"></div>
+                <div class="colorBlack"></div>
+            </div>
+            <span id="penSize" class="navActive"><i class="iconfont" style="color:#076d31">&#xe66b;</i></span>
+            <div class="penSizeChose" id="penSizeChose">
+                <div class="sSize"></div>
+                <div class="mSize"></div>
+                <div class="lSize"></div>
+            </div>
+            <span id="penEraser"><i class="iconfont" style="color:#994412">&#xe71c;</i></span>
+            <span id="penClear"><i class="iconfont" style="color:#a30707">&#xe639;</i></span>
+        </div>
+    </div>
+
+    <div class="boardWrapper">
+
+        <canvas id="canvas"></canvas>
+    </div>
     <script>
     </script>
 </body>
